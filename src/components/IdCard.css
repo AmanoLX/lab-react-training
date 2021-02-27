@@ -1,0 +1,7 @@
+.idCard {
+  display: flex;
+}
+
+.idCard__left {
+  margin-right: 0.4em;
+}

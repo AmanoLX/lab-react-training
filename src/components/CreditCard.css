@@ -1,0 +1,30 @@
+.creditcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 1em;
+  width: 18em;
+}
+
+.creditcard:last-child {
+  margin-right: 0;
+}
+
+.creditcard__type {
+  text-align: right;
+  margin-bottom: 0.5em;
+}
+
+.creditcard__number {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.creditcard__info-expiration {
+  margin-right: 2em;
+}
