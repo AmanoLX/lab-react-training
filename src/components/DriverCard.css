@@ -1,0 +1,33 @@
+.driverCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60em;
+  background: #455eb5;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+
+.driverCard__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.driverCard__imageBox-image {
+  width: 7em;
+  height: 7em;
+  margin-right: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.driverCard__info-car {
+  display: flex;
+}
+
+.driverCard__car-model {
+  margin-right: 0.3em;
+}
