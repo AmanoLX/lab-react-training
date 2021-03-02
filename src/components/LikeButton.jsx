@@ -4,7 +4,6 @@ import './LikeButton.css';
 class LikeButton extends Component {
   state = {
     count: 0,
-    bgColor: ['purple', 'blue', 'green', 'yellow', 'orange', 'red'],
   };
 
   handleIncrement = () => {
@@ -15,16 +14,16 @@ class LikeButton extends Component {
   };
 
   render() {
+    const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
+
     return (
-      <div>
-        <button
-          onClick={this.handleIncrement}
-          class="btn-like"
-          style={{ background: this.state.bgColor[0] }}
-        >
-          {this.state.count} {this.state.count === 1 ? 'Like' : 'Likes'}
-        </button>
-      </div>
+      <button
+        onClick={this.handleIncrement}
+        class="btn-like"
+        style={{ background: colors[this.state.count % colors.length] }}
+      >
+        {this.state.count} {this.state.count === 1 ? 'Like' : 'Likes'}
+      </button>
     );
   }
 }

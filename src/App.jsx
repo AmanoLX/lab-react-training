@@ -32,22 +32,18 @@ function App() {
           birth={new Date('1988-05-11')}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-
         {/* Iteration 2: Greetings */}
         <h2 className="iteration">Iteration 2: Greetings</h2>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
-
         {/* Iteration 3: Random Number */}
         <h2 className="iteration">Iteration 3: Random Number</h2>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
-
         {/* Iteration 4: BoxColor */}
         <h2 className="iteration">Iteration 4: BoxColor</h2>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
-
         {/* Iteration 5: CreditCard */}
         <h2 className="iteration">Iteration 5: CreditCard</h2>
         <div className="row">
@@ -82,7 +78,6 @@ function App() {
             color="white"
           />
         </div>
-
         {/* Iteration 6: Rating */}
         <h2 className="iteration">Iteration 6: Rating</h2>
         <div className="ratingBox">
@@ -93,7 +88,6 @@ function App() {
           <Rating>4</Rating>
           <Rating>5</Rating>
         </div>
-
         {/* Iteration 7: DriverCard */}
         <h2 className="iteration">Iteration 7: DriverCard</h2>
         <DriverCard
@@ -114,11 +108,9 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
-
         {/* Iteration 8: LikeButton */}
         <h2 className="iteration">Iteration 8: LikeButton</h2>
-        <LikeButton />
-
+        <LikeButton /> <LikeButton />
         {/* Iteration 9: ClickablePicture */}
         <h2 className="iteration">Iteration 9: ClickablePicture</h2>
         <ClickablePicture
