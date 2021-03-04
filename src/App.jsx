@@ -9,7 +9,8 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
-import FaceBook from './components/FaceBook';
+import Dice from './components/Dice';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -118,9 +119,12 @@ function App() {
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
-        {/* Iteration 13: FaceBook */}
-        <h2 className="iteration">Iteration 13: FaceBook</h2>
-        <FaceBook />
+        {/* Iteration 10: Dice */}
+        <h2 className="iteration">Iteration 10: Dice</h2>
+        <Dice />
+        {/* Iteration 13 + 14: Facebook */}
+        <h2 className="iteration">Iteration 13 + 14: Facebook</h2>
+        <Facebook />
       </div>
     </div>
   );
