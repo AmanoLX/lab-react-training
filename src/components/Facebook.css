@@ -1,0 +1,21 @@
+.facebook__card {
+  display: flex;
+}
+
+.facebook__card-image {
+  width: 10rem;
+  height: auto;
+  margin-right: 1em;
+}
+
+.facebook__card-details {
+  font-size: 1.5rem;
+}
+
+.highlighted {
+  background: lightblue;
+}
+
+.facebook-btn {
+  padding: 0.5rem;
+}

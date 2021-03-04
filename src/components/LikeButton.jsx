@@ -19,7 +19,7 @@ class LikeButton extends Component {
     return (
       <button
         onClick={this.handleIncrement}
-        class="btn-like"
+        className="btn-like"
         style={{ background: colors[this.state.count % colors.length] }}
       >
         {this.state.count} {this.state.count === 1 ? 'Like' : 'Likes'}
