@@ -7,26 +7,34 @@ class SignupPage extends Component {
     nationality: '',
   };
 
-  handleEmailChange = (e) => {
+  handleChange = (e) => {
     const value = e.target.value;
+    const name = e.target.name;
     this.setState({
-      email: value,
+      [name]: value,
     });
   };
 
-  handlePasswordlChange = (e) => {
-    const value = e.target.value;
-    this.setState({
-      password: value,
-    });
-  };
+  // handleEmailChange = (e) => {
+  //   const value = e.target.value;
+  //   this.setState({
+  //     email: value,
+  //   });
+  // };
 
-  handleNationalityChange = (e) => {
-    const value = e.target.value;
-    this.setState({
-      nationality: value,
-    });
-  };
+  // handlePasswordlChange = (e) => {
+  //   const value = e.target.value;
+  //   this.setState({
+  //     password: value,
+  //   });
+  // };
+
+  // handleNationalityChange = (e) => {
+  //   const value = e.target.value;
+  //   this.setState({
+  //     nationality: value,
+  //   });
+  // };
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -51,19 +59,20 @@ class SignupPage extends Component {
             type="text"
             name="email"
             value={this.state.email}
-            onChange={this.handleEmailChange}
+            onChange={this.handleChange}
           />
           <label>Password:</label>
           <input
             type="password"
             name="password"
             value={this.state.password}
-            onChange={this.handlePasswordlChange}
+            onChange={this.handleChange}
           />
           <label>Nationality:</label>
           <select
+            name="nationality"
             value={this.state.nationality.value}
-            onChange={this.handleNationalityChange}
+            onChange={this.handleChange}
           >
             <option value="en">EN</option>
             <option value="de">DE</option>
