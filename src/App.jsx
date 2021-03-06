@@ -11,6 +11,9 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Facebook from './components/Facebook';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -122,9 +125,25 @@ function App() {
         {/* Iteration 10: Dice */}
         <h2 className="iteration">Iteration 10: Dice</h2>
         <Dice />
+        {/* Iteration 11: Carousel */}
+        <h2 className="iteration">Iteration 11: Carousel</h2>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+        {/* Iteration 12: NumbersTable */}
+        <h2 className="iteration">Iteration 12: NumbersTable</h2>
+        <NumbersTable limit={12} />
         {/* Iteration 13 + 14: Facebook */}
         <h2 className="iteration">Iteration 13 + 14: Facebook</h2>
         <Facebook />
+        {/* Iteration 15: Form - SignupPage */}
+        <h2 className="iteration">Iteration 15: Form - SignupPage</h2>
+        <SignupPage />
       </div>
     </div>
   );

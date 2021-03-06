@@ -38,7 +38,7 @@ class Facebook extends React.Component {
     return (
       <div>
         <button
-          className={'facebook-btn ' + (!selectedCountry ? 'highlighted' : '')}
+          className={'btn ' + (!selectedCountry ? 'highlighted' : '')}
           onClick={() => this.handleCountrySelect(null)}
         >
           All
@@ -47,8 +47,7 @@ class Facebook extends React.Component {
           <button
             key={country}
             className={
-              'facebook-btn ' +
-              (selectedCountry === country ? 'highlighted' : '')
+              'btn ' + (selectedCountry === country ? 'highlighted' : '')
             }
             onClick={() => this.handleCountrySelect(country)}
           >
